@@ -14,6 +14,12 @@ ON o.product_name = p.product_name
 GROUP BY p.category
 ORDER BY revenue DESC;
 
+-- Revenue by state
+SELECT "state", SUM(sales) AS total_sales, SUM(profit) AS total_profit
+FROM orders
+GROUP BY "state"
+ORDER BY total_sales DESC;
+
 -- Top 10 customers by revenue
 SELECT
     c.customer_name,
