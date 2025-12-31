@@ -25,6 +25,16 @@ FROM superstore_standard
 WHERE sales IS NOT NULL
   AND profit IS NOT NULL;
 
+--Reformat the order date
+SELECT
+    printf('%04d-%02d-%02d',
+           CAST(substr(order_date, -4, 4) AS INTEGER),             -- Year
+           CAST(substr(order_date, 1, instr(order_date, '/')-1) AS INTEGER),  -- Month
+           CAST(substr(order_date, instr(order_date, '/')+1, instr(substr(order_date, instr(order_date, '/')+1), '/')-1) AS INTEGER)  -- Day
+          ) AS formatted_date
+FROM orders
+LIMIT 5;
+
 -- Create customers table
 CREATE TABLE customers AS
 SELECT DISTINCT
