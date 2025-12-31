@@ -1,4 +1,3 @@
-
 CREATE TABLE superstore_raw (
     order_id TEXT,
     order_date DATE,
@@ -7,7 +6,7 @@ CREATE TABLE superstore_raw (
     customer_name TEXT,
     segment TEXT,
     region TEXT,
-    state TEXT,
+    "state" TEXT,
     city TEXT,
     category TEXT,
     sub_category TEXT,
@@ -15,4 +14,4 @@ CREATE TABLE superstore_raw (
     sales REAL,
     quantity INTEGER,
     profit REAL
-
+);
