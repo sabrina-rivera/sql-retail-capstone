@@ -3,6 +3,8 @@
 ## 📌 Business Task
 Analyze retail sales data to identify top-performing products, customer segments, and regional trends in order to support data-driven business decisions for a retail consulting client.
 
+Objective:
+Provide actionable insights that help the client improve revenue, profitability, and strategic planning.
 ---
 
 ## 🏢 Scenario
@@ -19,24 +21,25 @@ I am a junior data analyst working for a business intelligence consulting firm. 
 ---
 
 ## 📂 Data Source
-**Dataset:** Sample Superstore  
-**Source:** Kaggle (public dataset)  
+**Dataset:** Sample-Superstore  
+**Source:** Kaggle (public dataset) user Vivek Chowdhury 
 **Format:** CSV  
 **File Size:** ~1–2 MB  
 
 ### Data Description
 - Contains order-level retail sales data
-- Includes customer, product, geographic, and financial information
+- Includes customer, product, and geographic information
 
 ### Data Limitations
-- Single-table dataset (normalized into multiple tables for analysis)
-- Historical snapshot only
-- No customer demographic details beyond segment
+-Public, fictional dataset commonly used for analytics training
+-Meets ROCCC standards for learning purposes
+-Single-table structure normalized into multiple tables for analysis
+-Limited customer demographic detail beyond segmentation
 
 ---
 
 ## 🧰 Tools Used
-- SQL (SQLite / PostgreSQL)
+- SQL (DB Browser for SQLite)
 - GitHub
 - Excel / Google Sheets (data inspection)
 - PowerPoint / Google Slides (presentation)
