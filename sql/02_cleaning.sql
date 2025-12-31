@@ -1,7 +1,27 @@
+-- Standardize all column names
+CREATE TABLE superstore_standard AS
+SELECT
+    "Order ID"      AS order_id,
+    "Order Date"    AS order_date,
+    "Customer ID"   AS customer_id,
+    "Customer Name" AS customer_name,
+    Segment         AS segment,
+    Region          AS region,
+    "State"         AS "state",
+    City            AS city,
+    Category        AS category,
+    "Sub-Category"  AS sub_category,
+    Sales           AS sales,
+    Quantity        AS quantity,
+    Profit          AS profit,
+    "Product Name"  AS product_name,
+    "Ship Date"     AS ship_date
+FROM superstore_raw;
+
 -- Remove duplicate orders
 CREATE TABLE superstore_cleaned AS
 SELECT DISTINCT *
-FROM superstore_raw
+FROM superstore_standard
 WHERE sales IS NOT NULL
   AND profit IS NOT NULL;
 
@@ -33,6 +53,6 @@ SELECT
     sales,
     quantity,
     profit,
-    state,
+    "state",
     city
 FROM superstore_cleaned;
