@@ -17,6 +17,7 @@ I am a junior data analyst working for a business intelligence consulting firm. 
 - Which customer segments are most profitable?
 - How do sales and profit vary by region?
 - Are there identifiable sales trends over time?
+- Which regions consistently underperform?
 
 ---
 
@@ -29,6 +30,13 @@ I am a junior data analyst working for a business intelligence consulting firm. 
 ### Data Description
 - Contains order-level retail sales data
 - Includes customer, product, and geographic information
+
+###ROCCC Check
+Reliable: Public retail dataset used widely
+Original: Kaggle-hosted
+Comprehensive: Covers sales, profit, customers, geography
+Current: Historical but sufficient for trend analysis
+Cited: Kaggle source referenced
 
 ### Data Limitations
 -Public, fictional dataset commonly used for analytics training
@@ -53,7 +61,7 @@ This project follows the **Ask → Prepare → Process → Analyze → Share →
 
 ## 🧹 Data Cleaning & Processing
 - Removed duplicate orders
-- Standardized date formats
+- Standardized date formats and column names
 - Converted numeric fields to appropriate data types
 - Created normalized tables for customers, products, and orders
 
